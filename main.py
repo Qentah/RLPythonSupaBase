@@ -1,8 +1,8 @@
 from realtime.connection import Socket
 from realtime.channel import Channel
 
-API_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imlsa2R0emV3Z3Zscmttc2F1dnVhIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTUyOTMwODMsImV4cCI6MTk3MDg2OTA4M30.WdnlTbHugUUQ9NHAGFemRlVrrxRkhjXdvGpDfXVQtlE"
-SUPABASE_ID="ilkdtzewgvlrkmsauvua"
+API_KEY=${{secrets.API_KEY}}
+SUPABASE_ID=${{secrets.SUPABASE_ID}}
 
 def callback(payload):
     if payload['type'] == "DELETE" :
